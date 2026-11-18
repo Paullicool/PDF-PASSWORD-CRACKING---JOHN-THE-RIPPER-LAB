@@ -61,6 +61,24 @@ john --show all_hashes.txt
 | My Locked PDF2.pdf  | Word + number suffix    | Dictionary      | ~3 seconds     |
 | My Locked PDF3.pdf  | Random 10-char alnum    | Brute force     | Not cracked (timed out — demonstrates strong password resistance) |
 
+## Screenshots
+
+**1. Photo of the PDF1 Content `pdf2john`**
+![Hash extraction](PDF1.png)
+*Capturing the flag is satisfying.*
+
+**2. Photo of the PDF2 Content**
+![Dictionary attack](PDF2.png)
+*Running `john --wordlist=rockyou.txt` against the extracted hashes — file1 and file2 crack almost instantly.*
+
+**3. Photo of the PDF3 Content**
+![Mask attack](PDF3.png)
+*Using a digit-only mask to recover the 4-digit PIN on file1.pdf.*
+
+**4. Photo of the PDF4 Content**
+![Cracked results](PDF4.png)
+*Output of `john --show all_hashes.txt` showing the recovered passwords for each file.*
+
 ## Key Takeaways
 - Weak/common passwords (numeric PINs, dictionary words) fall in seconds
   regardless of PDF encryption strength.
