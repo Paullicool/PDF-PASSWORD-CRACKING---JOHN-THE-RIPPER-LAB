@@ -65,7 +65,6 @@ john --show all_hashes.txt
 
 **1. Photo of the PDF1 Content `pdf2john`**
 ![Hash extraction](PDF1.png)
-*Capturing the flag is satisfying.*
 
 **2. Photo of the PDF2 Content**
 ![Dictionary attack](PDF2.png)
@@ -73,11 +72,10 @@ john --show all_hashes.txt
 
 **3. Photo of the PDF3 Content**
 ![Mask attack](PDF3.png)
-*Using a digit-only mask to recover the 4-digit PIN on file1.pdf.*
 
 **4. Photo of the PDF4 Content**
 ![Cracked results](PDF4.png)
-*Output of `john --show all_hashes.txt` showing the recovered passwords for each file.*
+
 
 ## Key Takeaways
 - Weak/common passwords (numeric PINs, dictionary words) fall in seconds
